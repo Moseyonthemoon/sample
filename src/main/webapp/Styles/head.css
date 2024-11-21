@@ -1,0 +1,136 @@
+.flex{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color:pink;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.f1{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    
+}
+.Search-button{
+    transition: opacity 0.3s;
+    height: 44px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(248, 248, 248);
+    border-color: gray;
+    border-width: 0.2px;
+    margin-left: -1px;
+}
+.Search-button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.Search-button:active{
+    opacity: 0.3;
+}
+.Search-Icon{
+    width: 40px;
+}
+.Search{
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+    font-size: 18px;
+    border-color: gray;
+    border-width: 0.2px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition:opacity 0.2s,box-shadow 0.2s;
+    padding-left:10px;
+}
+.Search:hover{
+    opacity:0.6;
+}
+.Search::placeholder{
+    padding-left: 5px;
+}
+.f2{
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+.f3{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+.login{
+    background-color:rgb(2,158,255);
+    color:white;
+    border:none;
+    height:36px;
+    width:74px;
+    border-radius:18px;
+    font-weight:bold;
+    font-size:15px;
+    cursor:pointer;
+    transition:opacity 0.2s,box-shadow 0.2s;
+    margin-right: 20px;
+}
+.reset{
+    background-color:rgb(2,158,255);
+    color:white;
+    border:none;
+    height:36px;
+    width:74px;
+    border-radius:18px;
+    font-weight:bold;
+    font-size:15px;
+    cursor:pointer;
+    transition:opacity 0.2s,box-shadow 0.2s;
+}
+.login:hover{
+    opacity:0.7;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+}
+.reset:hover{
+    opacity:0.7;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+}
+.login-button-longin:hover{
+	opacity:0.7;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+}
+.login-button-longin:active{
+	opacity:0.3;
+}
+.login:active{
+    opacity:0.3;
+}
+.reset:active{
+    opacity:0.3;
+}
+.user{
+	font-size: 26px;
+}
+.icon-img{
+    width:60px;
+    border-radius: 30px;
+    margin-left:50px;
+}
+#front-id{
+	margin-left:50px
+}
+.login-button-longin{
+	background-color:rgb(2,158,255);
+    color:white;
+    border:none;
+    height:36px;
+    width:74px;
+    border-radius:18px;
+    font-weight:bold;
+    font-size:15px;
+    cursor:pointer;
+    transition:opacity 0.2s,box-shadow 0.2s;
+    margin-right:20px;
+}

@@ -1,0 +1,146 @@
+<%@page import="dao.Pet"%>
+<%@page import="java.util.List"%>
+<%@page import="jdbc.Selectpet"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>首页</title>
+        <link rel="stylesheet" href="Styles/content.css">
+        <link rel="stylesheet" href="Styles/total.css">
+        <link rel="stylesheet" href="Styles/head.css">
+    </head>
+    <body>
+    <!-- 顶部布局 -->
+        <div class="flex">
+         <!-- 左 -->
+            <div class="f1">
+                <img class="icon-img" src="Img/icon.jpg">
+                <input onclick="window.location.href='front.jsp';"  class="reset" id="front-id" type="button" value="首页"><br>
+            </div>
+         <!-- 中 -->
+            <div class="f2">
+                <input class="Search" type="text" placeholder="Search">
+                <button class="Search-button"><img class="Search-Icon" src="Img/search.svg" alt=""></button>
+            </div>
+         <!-- 右 -->
+            <div class="f3" >
+					<%
+						if(session.getAttribute("loginSuccess")==null){
+					%>
+		                
+		                <button onclick="window.location.href='login.jsp';" class="login-button-longin">登录</button>
+				        <a href="register.jsp"><input class="reset" type="button" value="注册"></a><br>
+		                
+	                <%} else{ %>
+	                		<a href="user.jsp"><input class="login" type="button" value="${sessionScope.loginSuccess }"></a><br>
+		                	<a href="Outlogin"><input class="login" type="button" value="退出登录"></a><br>
+		                	
+		                	
+					<%} %>
+            </div>
+        
+        </div>
+         <!-- 中间布局 -->
+         
+         
+        <div class="grid">
+            <div class="ratOut" onclick="window.location.href='ratPage.jsp';">
+            	<!-- 大图 -->
+	                <div>
+	                    <img class="img1" src="Img/rat.jpg">
+	                </div>
+	            <!-- 小图 -->
+	                <div>
+	                    <div class="div1">
+	                        <img class="img2" src="Img/unnamed.jpg">
+	                    </div>
+	            <!-- 描述 -->
+	                    <div class="div2">
+	                        <p class="img-title">仓鼠</p>
+	                        <p class="img-author">rat</p>
+	                        <p class="img-stats">one years age</p>
+	                    </div>
+	                </div>
+            </div>
+            <div class="ratOut" onclick="window.location.href='ratPage.jsp';">
+                <div>
+                    <img   class="img1" src="Img/dog2.jpg">
+                </div>
+                <div>
+                    <div class="div1">
+                        <img class="img2" src="Img/unnamed.jpg">
+                    </div>
+                    <div class="div2">
+                        <p class="img-title">雪纳瑞</p>
+                        <p class="img-author">dog</p>
+                        <p class="img-stats">one years age</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ratOut" onclick="window.location.href='ratPage.jsp';">
+                <div>
+                    <img class="img1" src="Img/cat.jpg">
+                </div>
+                <div>
+                    <div class="div1">
+                        <img class="img2" src="Img/unnamed.jpg">
+                    </div>
+                    <div class="div2">
+                        <p class="img-title">奶牛猫</p>
+                        <p class="img-author">boys</p>
+                        <p class="img-stats">one years age</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ratOut" onclick="window.location.href='ratPage.jsp';">
+                <div>
+                    <img class="img1" src="Img/pig.jpg">
+                </div>
+                <div>
+                    <div class="div1">
+                        <img class="img2" src="Img/unnamed.jpg">
+                    </div>
+                    <div class="div2">
+                        <p class="img-title">小香猪</p>
+                        <p class="img-author">boys</p>
+                        <p class="img-stats">one years age</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ratOut" onclick="window.location.href='ratPage.jsp';">
+                <div>
+                    <img class="img1" src="Img/rabbit.jpg">
+                </div>
+                <div>
+                    <div class="div1">
+                        <img class="img2" src="Img/unnamed.jpg">
+                    </div>
+                    <div class="div2">
+                        <p class="img-title">兔子</p>
+                        <p class="img-author">boys</p>
+                        <p class="img-stats">one years age</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ratOut" onclick="window.location.href='ratPage.jsp';">
+                <div>
+                    <img class="img1" src="Img/wugui.jpg">
+                </div>
+                <div>
+                    <div class="div1">
+                        <img class="img2" src="Img/unnamed.jpg">
+                    </div>
+                    <div class="div2">
+                        <p class="img-title">乌龟</p>
+                        <p class="img-author">boys</p>
+                        <p class="img-stats">one years age</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- 底部布局 -->
+         <div style="height:300px"></div>
+    </body>
+</html>
